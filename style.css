@@ -1,0 +1,86 @@
+/* Type selector */
+body {
+background-color: #111827;
+color: white;
+font-family: Arial, sans-serif;
+}
+
+/* Type selector */
+p {
+line-height: 1.6;
+}
+
+/* ID selector */
+#header {
+background-color: #22c55e;
+padding: 20px;
+margin: 20px;
+border: 3px solid white;
+text-align: center;
+}
+
+/* Class selector */
+.card {
+background-color: #1f2937;
+padding: 20px;
+margin: 20px;
+border: 3px solid #22c55e;
+border-radius: 10px;
+}
+
+/* Another class */
+.image-box {
+padding: 15px;
+margin: 20px;
+border: 3px solid white;
+}/* Responsive Layout - Homework 3 */
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+.project-container {
+display: flex;
+gap: 20px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.project-card {
+flex: 1;
+min-width: 250px;
+padding: 20px;
+}
+
+
+/* Mobile and Tablet Layout */
+@media screen and (max-width: 768px) {
+
+.project-container {
+flex-direction: column;
+}
+
+.project-card {
+width: 100%;
+}
+
+}/* Homework 3: Responsive Layout */
+
+.projects-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+.projects-container {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+.projects-container {
+grid-template-columns: 1fr;
+}
+}
